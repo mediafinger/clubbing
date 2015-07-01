@@ -19,13 +19,40 @@ You need to have **git** installed on your system - and you should have a GitHub
 Then on your terminal change to the folder where you store your Ruby projects
 and run:
 
-`git clone git@github.com:mediafinger/ruby_test.git ruby_test` which will create a new folder `ruby_test`.
+`git clone git@github.com:mediafinger/clubbing.git clubbing` which will create a new folder `clubbing`.
 
 If you have never used GitHub before you could install their GUI to make it a bit simpler:
 
 - Windows: https://windows.github.com/index.html
 - OS X: https://mac.github.com/index.html
 - Linux: I bet you already know how to use the terminal, so just use the `git` CLI (or look for another GUI)
+
+### minitest
+
+Install the latest version with `gem install minitest`
+
+Run it manually with: `ruby -Ilib:test test/person_test.rb`
+
+Read more about it: https://github.com/seattlerb/minitest
+
+
+## irb - interactive ruby console
+
+Now that you have a working setup to test and linter (with rubocop) your Ruby code, feel free to
+add more classes with more code and more tests!
+
+Remember that `rubocop` will notify you about syntax errors and `minitest` will tell you if
+your tests are all green or failing (if you write any). But you can also just open the
+**interactive ruby console** and play around with your code!
+
+Inside your project folder run `irb`
+
+Inside of irb run `load './person.rb'` (and repeat when you change the file!)
+
+and use the class:
+
+- `person = Person.new("Andreas")`
+- `person.to_s`
 
 
 ### .ruby-version
@@ -55,32 +82,5 @@ More options you find here: https://github.com/bbatsov/rubocop
 And read here why formatting your code is important:
 http://ruby-for-beginners.rubymonstas.org/03-learning_to_program/03-formatting_code.html
 
-
-### minitest
-
-Install the latest version with `gem install minitest`
-
-Run it manually with: `ruby -Ilib:test test/person_test.rb`
-
-Read more about it: https://github.com/seattlerb/minitest
-
-
-## What now?
-
-Now that you have a working setup to test and linter (with rubocop) your Ruby code, feel free to
-add more classes with more code and more tests!
-
-Remember that `rubocop` will notify you about syntax errors and `minitest` will tell you if
-your tests are all green or failing (if you write any). But you can also just open the
-**interactive ruby console** and play around with your code!
-
-Inside your project folder run `irb`
-
-Inside of irb run `load './person.rb'` (and repeat when you change the file!)
-
-and use the class:
-
-- `person = Person.new("Andreas")`
-- `person.to_s`
 
 **Have fun!**
