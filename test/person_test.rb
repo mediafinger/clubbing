@@ -58,4 +58,12 @@ class PersonTest < Minitest::Test
 
     assert_equal Date.parse(@sample_birthday), person.birthday
   end
+
+  # age tests
+
+  def test_age_is_set
+    person    = Person.new(@arguments)
+
+    assert_equal 30, person.age # note: this test will fail in a year from now ;-)
+  end
 end
