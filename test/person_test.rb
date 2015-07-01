@@ -2,8 +2,9 @@ require "minitest/autorun"
 require_relative "../person"
 
 class PersonTest < Minitest::Test
+  # the setup method is run before every test
   def setup
-    @sample_birthday = "1985-06-30"
+    @sample_birthday = "1985-06-30"      # the date format is called ISO8601
     @sample_name     = "andreas finger"
 
     @arguments = { name: @sample_name, birthday: @sample_birthday }
