@@ -60,7 +60,7 @@ http://ruby-for-beginners.rubymonstas.org/03-learning_to_program/03-formatting_c
 
 Install the latest version with `gem install minitest`
 
-Run it manually with: `ruby -Ilib:test test/attendee_test.rb`
+Run it manually with: `ruby -Ilib:test test/person_test.rb`
 
 Read more about it: https://github.com/seattlerb/minitest
 
@@ -76,11 +76,11 @@ your tests are all green or failing (if you write any). But you can also just op
 
 Inside your project folder run `irb`
 
-Inside of irb run `load './attendee.rb'` (and repeat when you change the file!)
+Inside of irb run `load './person.rb'` (and repeat when you change the file!)
 
 and use the class:
 
-- `attendee = Attendee.new("Andreas")`
-- `attendee.to_s`
+- `person = Person.new("Andreas")`
+- `person.to_s`
 
 **Have fun!**
